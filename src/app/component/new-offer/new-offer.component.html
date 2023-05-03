@@ -1,0 +1,62 @@
+<form #offerForm="ngForm" class="formfieldcontainer">
+  <ng-container>
+    <div class="div-container">
+      <mat-form-field class="form-field">
+        <input
+          type="text"
+          matInput
+          placeholder="id"
+          name="ID"
+          required
+          [(ngModel)]="offerData.id"
+        />
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input
+          type="text"
+          matInput
+          placeholder="Titulo"
+          name="title"
+          maxlength="11"
+          required
+          [(ngModel)]="offerData.title"
+        />
+      </mat-form-field>
+    </div>
+    <div class="div-container">
+      <mat-form-field class="form-field">
+        <input
+          type="text"
+          matInput
+          placeholder="Descripción"
+          name="description"
+          [(ngModel)]="offerData.description"
+        />
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input
+          type="number"
+          matInput
+          placeholder="Puntos"
+          name="points"
+          required
+          min="0" 
+          max="100"
+          [(ngModel)]="offerData.points"
+        />
+      </mat-form-field>
+    </div>
+    <div class="div-container">
+      <mat-form-field class="form-field">
+        <input
+          type="text"
+          matInput
+          placeholder="Business Id"
+          name="businessId"
+          [(ngModel)]="offerData.businessId"
+        />
+      </mat-form-field>
+      <div class="form-field"></div>
+    </div>
+  </ng-container>
+</form>
