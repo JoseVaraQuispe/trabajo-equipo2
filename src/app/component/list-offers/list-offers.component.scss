@@ -1,0 +1,31 @@
+table {
+  width: 100%;
+}
+.tablecontainer {
+  margin: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.mat-column-id {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-actions {
+  width: 300px;
+}
+
+::ng-deep td.mat-column-actions {
+  display: grid;
+  gap: 8px;
+  padding-top: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.formfieldcontainer {
+  display: flex;
+  gap: 8px;
+  margin: 40px 40px 0 40px;
+}

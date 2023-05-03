@@ -1,0 +1,11 @@
+{
+  "offers":[
+    {
+      "id": "0",
+      "title": "Titulo",
+      "description": "descripcion",
+      "points": "puntos",
+      "businessId": "businessId"
+    }
+  ]
+}

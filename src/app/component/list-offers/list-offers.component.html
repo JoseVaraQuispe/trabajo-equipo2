@@ -1,0 +1,60 @@
+<div>
+    <div class="formfieldcontainer">
+      <button mat-raised-button class="button" color="primary" (click)="addNew()">
+        New
+      </button>
+  
+    </div>
+  </div>
+  <div class="mat-elevation-z8 tablecontainer">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Titúlo</th>
+        <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef>Descripción</th>
+        <td mat-cell *matCellDef="let element">{{ element.description }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="points">
+        <th mat-header-cell *matHeaderCellDef>Puntos</th>
+        <td mat-cell *matCellDef="let element">{{ element.points }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="businessId">
+        <th mat-header-cell *matHeaderCellDef>Business Id</th>
+        <td mat-cell *matCellDef="let element">{{ element.businessId }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let element">
+          <a mat-raised-button color="primary" (click)="editItem(element)">
+            <mat-icon>edit</mat-icon>
+          </a>
+          <a mat-raised-button color="warn" (click)="deleteItem(element.id)">
+            <mat-icon>delete</mat-icon>
+          </a>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      aria-label="Select page"
+    >
+    </mat-paginator>  
+  </div>
+  
+  
+  
