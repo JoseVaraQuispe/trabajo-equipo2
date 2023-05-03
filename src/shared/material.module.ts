@@ -9,6 +9,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   imports: [
@@ -25,11 +29,16 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatCardModule,
+
+    
   ],
   exports: [
     BrowserAnimationsModule,
-    FormsModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
@@ -40,6 +49,10 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatCardModule,
+
   ],
 })
 export class MaterialModule {}
