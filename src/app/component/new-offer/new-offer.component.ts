@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Offer } from 'src/app/models/offer.model';
 import { HttpDataService } from 'src/app/services/http-data.service';
@@ -11,7 +11,7 @@ import { HttpDataService } from 'src/app/services/http-data.service';
 })
 export class NewOfferComponent {
   @ViewChild('movieForm', { static: false })
-  offerForm!: NgForm;
+  offerForm!: FormGroup;
 
   offerData!: Offer;
 
