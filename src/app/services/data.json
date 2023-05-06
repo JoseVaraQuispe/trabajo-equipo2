@@ -6,6 +6,31 @@
       "description": "descripcion",
       "points": "puntos",
       "businessId": "businessId"
+    },
+
+    {
+      "id": 1,
+      "title": "Descuento en Zapatos",
+      "description": "Ahorre un 20% en su próxima compra de zapatos.",
+      "points": 100,
+      "businessId": 123
+    },
+
+    {
+      "id": 2,
+      "title": "Descuento en Restaurantes",
+      "description": "Disfrute de un 10% de descuento en su próxima cena.",
+      "points": 50,
+      "businessId": 456
+    },
+
+    {
+      "id": 3,
+      "title": "Envío Gratis",
+      "description": "Reciba envío gratis en su próxima compra en línea.",
+      "points": 75,
+      "businessId": 789
     }
   ]
+ 
 }

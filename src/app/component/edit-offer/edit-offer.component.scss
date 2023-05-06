@@ -1,0 +1,43 @@
+.mat-form-field {
+    width: 100%;
+  }
+  
+  .mat-input-element {
+    padding: 0 8px;
+  }
+  
+  mat-form-field {
+    margin-top: 24px;
+  }
+  
+  mat-form-field:last-child {
+    margin-bottom: 24px;
+  }
+  
+  button {
+    margin-right: 8px;
+  }
+  
+  
+  .success-message {
+    color: green;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .mat-form-field {
+      width: 100%;
+    }
+  
+    .form-buttons {
+      justify-content: center;
+    }
+  }
+  
