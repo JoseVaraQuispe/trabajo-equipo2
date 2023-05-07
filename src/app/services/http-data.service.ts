@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpClient,
-  HttpErrorResponse,
-  HttpHeaders,
-} from '@angular/common/http';
+import {HttpClient,HttpErrorResponse,HttpHeaders,} from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Offer } from '../models/offer.model';
 
@@ -37,9 +33,9 @@ export class HttpDataService {
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  getList(): Observable<Offer> {
+  getList(): Observable<Offer[]> {
     return this.http
-      .get<Offer>(this.base_Url)
+      .get<Offer[]>(this.base_Url)
       .pipe(retry(2), catchError(this.handleError));
   }
 
